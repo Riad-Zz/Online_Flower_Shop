@@ -142,6 +142,17 @@ header {
     width: auto;
     height: 480px;
 }
+.flower-name{
+    margin-top: 20px;
+    color: rgba(39, 39, 39, 1);
+    font-size:1.5rem ;
+    font-weight: 700;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.flower-name-3{
+    margin-top: 2px;
+}
  .flwr-1{
     padding-top: 45px;
  }
@@ -163,11 +174,30 @@ header {
     background-color: rgba(71, 125, 17, 0.15);
  }
 
+/*Commitment-section Style*/
+.Commitment-section{
+    background-color: rgba(39, 39, 39, 0.05);
+    display: flex;
+    justify-content: center;
+    /* align-content: center; */
+    padding-top: 86px;
+    padding-bottom: 86px;
+    gap: 100px;
+    margin-bottom: 120px;
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+}
+.item img{
+    margin-bottom: 24px;
+}
+
 /*responsibleness for Mobile(Small Device)*/
 @media screen and (max-width: 576px) {
   .navigation-bar,
   .nav-items,
-  .banner-section {
+  .banner-section,
+  .Commitment-section {
     flex-direction: column;
     gap: 30px;
     align-items: center;
@@ -190,6 +220,7 @@ header {
   .flower-container{
     flex-direction: column;
     align-items: center;
+    gap: 40px;
   }
   .flower-description{
     width: 100%;
@@ -227,5 +258,11 @@ header {
   }
   .banner-description{
     padding-left: 0px;
+  }
+  .flower-container{
+    gap: 40px;
+  }
+  .Commitment-section{
+    max-width: 90%;
   }
 }
