@@ -242,8 +242,8 @@ header {
     max-width: 1440px;
     margin: 0 auto ;
     margin-left: 230px;
-    margin-bottom: 120px;
     border-radius: 8px;
+    margin-bottom: 120px;
 }
 .deal-text{
     margin-bottom: 48px;
@@ -258,6 +258,19 @@ header {
 }
 .sub-btn{
     margin-left: 16px;
+}
+
+/*Footer Section*/
+.footer-section{
+  width: 100%;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 128px;
+  background-color: rgba(17, 16, 16, 1);
+  color: rgba(255, 255, 255, 0.9);
 }
 
 /*responsibleness for Mobile(Small Device)*/
@@ -313,6 +326,7 @@ header {
         margin-left: 0px;
         width: 95%;
         margin: 0 auto;
+        margin-bottom: 120px;
     }
     .input-field{
         width: 80%;
@@ -320,6 +334,10 @@ header {
     .sub-btn{
         margin-top: 15px;
         margin-bottom: 7px;
+    }
+    .footer-section{
+      padding-left: 10px;
+      padding-right: 10px;
     }
 }
 
@@ -369,6 +387,7 @@ header {
         margin-left: 0px;
         width: 95%;
         margin: 0 auto;
+        margin-bottom: 120px;
     }
     .input-field{
         width: 80%;
