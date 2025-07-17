@@ -232,6 +232,34 @@ header {
     border-radius: 10px;
 }
 
+/*Email Subscribe Section*/
+.deals-email-section{
+    text-align: center;
+    background-image: url(../Assets/Rectangle\ 9.png);
+    background-repeat: no-repeat;
+    padding-top: 122px;
+    padding-bottom: 122px;
+    max-width: 1440px;
+    margin: 0 auto ;
+    margin-left: 230px;
+    margin-bottom: 120px;
+    border-radius: 8px;
+}
+.deal-text{
+    margin-bottom: 48px;
+}
+.input-field{
+    width: 700px;
+    padding: 22px;
+    border-radius: 8px;
+    border: none;
+    background-color: white;
+    color: rgba(39, 39, 39, 0.6);
+}
+.sub-btn{
+    margin-left: 16px;
+}
+
 /*responsibleness for Mobile(Small Device)*/
 @media screen and (max-width: 790px) {
   .navigation-bar,
@@ -280,10 +308,23 @@ header {
     .image-container{
         grid-template-columns: repeat(1,1fr);
     }
+    .deals-email-section{
+        padding-top: 50px;
+        margin-left: 0px;
+        width: 95%;
+        margin: 0 auto;
+    }
+    .input-field{
+        width: 80%;
+    }
+    .sub-btn{
+        margin-top: 15px;
+        margin-bottom: 7px;
+    }
 }
 
 /*Responsiveness for Tablet(Medium Devices)*/
-@media screen and (min-width: 576px) and (max-width: 995px) {
+@media screen and (min-width: 790px) and (max-width: 1190px) {
   /* Banner Section  */
   .banner-section {
     flex-direction: column;
@@ -322,5 +363,18 @@ header {
   }
   .image-container{
         grid-template-columns: repeat(2,1fr);
+    }
+    .deals-email-section{
+        padding-top: 50px;
+        margin-left: 0px;
+        width: 95%;
+        margin: 0 auto;
+    }
+    .input-field{
+        width: 80%;
+    }
+    .sub-btn{
+        margin-top: 15px;
+        margin-bottom: 7px;
     }
 }
