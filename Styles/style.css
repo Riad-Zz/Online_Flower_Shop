@@ -192,12 +192,32 @@ header {
     margin-bottom: 24px;
 }
 
+/*Discount Section Style*/
+.discount-section{
+    background-color: rgba(229, 84, 115, 0.05);
+    justify-content: space-between;
+    gap: 50px;
+    padding: 100px;
+    align-items: center;
+    margin-bottom: 120px;
+}
+.discount-section-description{
+    max-width: 594px;
+    margin: 0 auto;
+    text-align: center;
+}
+.discount-image{
+    /* margin: 0 auto; */
+    padding-right: 150px;
+}
+
 /*responsibleness for Mobile(Small Device)*/
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 790px) {
   .navigation-bar,
   .nav-items,
   .banner-section,
-  .Commitment-section {
+  .Commitment-section,
+  .discount-section{
     flex-direction: column;
     gap: 30px;
     align-items: center;
@@ -230,7 +250,12 @@ header {
   .flower{
     width: 90%;
   }
-  
+  .discount-section{
+    justify-content: center;
+  }
+    .discount-image{
+        padding-right: 0px;
+    }
 }
 
 /*Responsiveness for Tablet(Medium Devices)*/
@@ -264,5 +289,11 @@ header {
   }
   .Commitment-section{
     max-width: 90%;
+  }
+  .discount-image{
+    padding-right: 0px;
+  }
+  .discount-section{
+    gap: 50px;
   }
 }
