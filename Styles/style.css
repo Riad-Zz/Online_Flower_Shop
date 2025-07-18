@@ -97,7 +97,6 @@ header {
 .banner-section {
   justify-content: space-between;
   align-items: center;
-  /* gap: 200px; */
 }
 .banner-description {
   padding-left: 20px;
@@ -120,6 +119,7 @@ header {
 .flower-subtext{
     max-width: 594px;
     margin: 0 auto;
+    padding: 20px;
 }
 .flower-container{
     display: flex ;
@@ -127,10 +127,8 @@ header {
     flex: 1;
     justify-content: center;
     flex-wrap: wrap;
-    /* align-items: center; */
 }
 .flower{
-    /* height: 578px; */
     border: 3px solid black;
     height: 538px;
     width: 464px;
@@ -154,7 +152,9 @@ header {
     margin-top: 2px;
 }
  .flwr-1{
+    max-width:290px ;
     padding-top: 45px;
+    /* padding-right: 50px; */
  }
 
   #flower-img2{
@@ -179,7 +179,6 @@ header {
     background-color: rgba(39, 39, 39, 0.05);
     display: flex;
     justify-content: center;
-    /* align-content: center; */
     padding-top: 86px;
     padding-bottom: 86px;
     gap: 100px;
@@ -304,14 +303,16 @@ header {
     align-items: center;
     gap: 40px;
   }
-  .flower-description{
-    width: 100%;
-    margin: 0 auto ;
-    margin-bottom: 48px;
-  }
   .flower{
     width: 90%;
   }
+  .flower-display-section{
+    width: 100%;
+}
+ .flower-subtext {
+  max-width: 90% ;
+  padding: 0%;
+ }
   .discount-section{
     justify-content: center;
   }
@@ -335,9 +336,17 @@ header {
         margin-top: 15px;
         margin-bottom: 7px;
     }
-    .footer-section{
-      padding-left: 10px;
-      padding-right: 10px;
+     /* .flwr-1{
+    padding-top: 45px;
+    margin-right: 30px;
+ } */
+  #flower-img2{
+    width: 90%;
+    padding-top: 40px;
+  }
+    .foot-info{
+      padding-left: 15px;
+      padding-right: 15px;
     }
 }
 
