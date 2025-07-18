@@ -158,10 +158,11 @@ header {
  }
 
   #flower-img2{
-    width: 350px;
+    max-width: 350px;
     padding-top: 40px;
   }
  .flwr-3{
+  max-width: 290px;
     padding-top: 55px;
  }
  .flower-1{
@@ -206,7 +207,6 @@ header {
     text-align: center;
 }
 .discount-image{
-    /* margin: 0 auto; */
     padding-right: 150px;
 }
 
@@ -216,20 +216,22 @@ header {
     margin-bottom: 120px;
 }
 .image-container{
+    box-sizing: border-box;
     margin-top: 48px;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 24px;
+    width: 100%;
 }
 .S-image{
     transition: transform 0.5s ease;
+    max-width: 100%;
+    border-radius: 8px;
 }
 .S-image:hover{
     transform: scale(1.08);
 }
-.image-container img{
-    border-radius: 10px;
-}
+
 
 /*Email Subscribe Section*/
 .deals-email-section{
@@ -240,7 +242,6 @@ header {
     padding-bottom: 122px;
     max-width: 1440px;
     margin: 0 auto ;
-    margin-left: 230px;
     border-radius: 8px;
     margin-bottom: 120px;
 }
@@ -273,7 +274,7 @@ header {
 }
 
 /*responsibleness for Mobile(Small Device)*/
-@media screen and (max-width: 790px) {
+@media screen and (max-width: 600px) {
   .navigation-bar,
   .nav-items,
   .banner-section,
@@ -297,6 +298,14 @@ header {
   }
   .banner-description{
     padding-left: 0px;
+    max-width: 100%;
+    margin: 0 auto ;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  .title{
+    font-size: 4rem;
+    width: 95%;
   }
   .flower-container{
     flex-direction: column;
@@ -322,6 +331,10 @@ header {
     .image-container{
         grid-template-columns: repeat(1,1fr);
     }
+    .S-image{
+      max-width: 90%;
+      margin: 0 auto;
+    }
     .deals-email-section{
         padding-top: 50px;
         margin-left: 0px;
@@ -336,10 +349,7 @@ header {
         margin-top: 15px;
         margin-bottom: 7px;
     }
-     /* .flwr-1{
-    padding-top: 45px;
-    margin-right: 30px;
- } */
+    
   #flower-img2{
     width: 90%;
     padding-top: 40px;
@@ -351,7 +361,7 @@ header {
 }
 
 /*Responsiveness for Tablet(Medium Devices)*/
-@media screen and (min-width: 790px) and (max-width: 1190px) {
+@media screen and (min-width: 601px) and (max-width: 994px) {
   /* Banner Section  */
   .banner-section {
     flex-direction: column;
@@ -390,6 +400,8 @@ header {
   }
   .image-container{
         grid-template-columns: repeat(2,1fr);
+        width: 90%;
+        justify-content: center;
     }
     .deals-email-section{
         padding-top: 50px;
